@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Friends</h4>
+    <div *ngFor="let friend of friends">
+      <ul style="list-style: none;">
+        <li>Name: {{ friend.name }}</li>
+        <li>Gender: {{ friend.gender }}</li>
+        <li>NumberOfYearsKnown: {{ friend.numberOfYearsKnown }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
