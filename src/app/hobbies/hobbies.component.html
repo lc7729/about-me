@@ -5,7 +5,9 @@
       <div class="card-body">
         <ul style="list-style: none;">
           <li>Name: {{ hobby.name }}</li>
-          <li>numberOfYearsEngaging: {{ hobby.numberOfYearsEngaging }}</li>
+          <li>
+            numberOfYearsEngaging: {{ hobby.numberOfYearsEngaging | addYear }}
+          </li>
         </ul>
       </div>
       <div class="card-footer">

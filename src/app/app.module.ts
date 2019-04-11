@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { FriendsComponent } from './friends/friends.component';
 import { FamilyComponent } from './family/family.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
+import { AddYearPipe } from './add-year.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     FriendsComponent,
     FamilyComponent,
-    HobbiesComponent
+    HobbiesComponent,
+    AddYearPipe
   ],
   imports: [
     BrowserModule,
