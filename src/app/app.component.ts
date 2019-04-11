@@ -9,6 +9,7 @@ import { Hobbies } from "./hobbies.model";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
+  title: string = "My Information Page";
   friends: Friends[];
   family: Family[];
   hobbies: Hobbies[];
