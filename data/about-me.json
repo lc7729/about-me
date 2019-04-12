@@ -1,0 +1,50 @@
+{
+  "family": [
+    {
+      "relation": "Husband",
+      "name": "Robert",
+      "age": 57
+    },
+    {
+      "relation": "Daughter",
+      "name": "Christine",
+      "age": 23
+    },
+    {
+      "relation": "Husband",
+      "name": "Lauren",
+      "age": 19
+    }
+  ],
+  "friends": [
+    {
+      "name": "Vivian",
+      "gender": "female",
+      "numberOfYearsKnown": 25
+    },
+    {
+      "name": "Susie",
+      "gender": "female",
+      "numberOfYearsKnown": 23
+    },
+    {
+      "name": "Limei",
+      "gender": "female",
+      "numberOfYearsKnown": 14
+    }
+  ],
+  "hobbies": [
+    {
+      "name": "Reading",
+      "numberOfYearsEngaging": 46
+    },
+    {
+      "name": "Music",
+      "numberOfYearsEngaging": 44
+    },
+    {
+      "name": "Sketching",
+      "numberOfYearsEngaging": 41
+    }
+  ]
+}

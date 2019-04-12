@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center;">
-  <h1 class="jumbotron my-5 mx-5">Welcom eto {{ title }}!</h1>
+  <h1 class="jumbotron my-5 mx-5">Welcome to {{ title }}!</h1>
 </div>
 
 <div class="container">
@@ -10,5 +10,26 @@
     <app-hobbies [hobbies]="hobbies"></app-hobbies>
   </div>
 </div>
+
+<br />
+
+<form #form="ngForm" (ngSubmit)="logForm(form.value)">
+  <label>Type a word:</label>
+  <div class="alert" *ngIf="word.invalid">Please enter 5 digits</div>
+  <input
+    type="text"
+    name="word"
+    ngModel
+    required
+    #word="ngModel"
+    pattern="[0-9]{5}"
+  />
+
+  <br />
+  <!--button class="btn btn-primary float-right" (click)="logForm()"-->
+  <button class="btn btn-primary float-right">
+    Show Input Word
+  </button>
+</form>
 
 <router-outlet></router-outlet>
