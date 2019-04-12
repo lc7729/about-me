@@ -19,7 +19,6 @@ export class AppComponent implements OnInit {
   constructor(private aboutmeService: AboutmeService) {}
 
   getFamily() {
-    //this.albums = this.albumService.getAlbums();
     this.aboutmeService.getFamily().subscribe(
       (family: Family[]) => {
         this.family = family;
@@ -28,8 +27,28 @@ export class AppComponent implements OnInit {
     );
   }
 
+  getFrields() {
+    this.aboutmeService.getFriends().subscribe(
+      (friends: Friends[]) => {
+        this.friends = friends;
+      },
+      error => console.log("Error: ", error)
+    );
+  }
+
+  getHobbies() {
+    this.aboutmeService.getHobbies().subscribe(
+      (hobbies: Hobbies[]) => {
+        this.hobbies = hobbies;
+      },
+      error => console.log("Error: ", error)
+    );
+  }
+
   ngOnInit(): void {
     this.getFamily();
+    this.getFrields();
+    this.getHobbies();
     // this.friends = [
     //   {
     //     name: "Vivian",
